@@ -1,0 +1,26 @@
+# 数据帧格式定义
+length: 72                #帧长度（包括头尾）
+frame:
+  header: [0x51, 0x51]     # 2字节帧头
+  footer: [0x0D, 0x0A]     # 2字节帧尾
+  payload_fields:           # 有效载荷字段定义
+    Motor_1:
+      angle: int32_t
+      speed: int32_t
+      current: int32_t
+    Motor_2:
+      angle: int32_t
+      speed: int32_t
+      current: int32_t
+    Motor_3:
+      angle: int32_t
+      speed: int32_t
+      current: int32_t
+    Motor_4:
+      angle: int32_t
+      speed: int32_t
+      current: int32_t
+    Adsorb_1: int32_t
+    Adsorb_2: int32_t
+    Adsorb_3: int32_t
+    Sec_f: uint64_t
