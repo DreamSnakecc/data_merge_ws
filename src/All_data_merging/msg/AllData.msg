@@ -1,4 +1,0 @@
-Header header
-NOKOV2ROS/robot_pose_vel pose_vel
-All_data_merging/SerialData serialdata 
-All_data_merging/cmd command
